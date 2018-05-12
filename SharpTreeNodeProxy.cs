@@ -26,7 +26,7 @@ using System.ComponentModel;
 using System.Linq;
 
 namespace ICSharpCode.TreeView {
-	struct ObjectChangedEventArgs {
+	class ObjectChangedEventArgs: EventArgs {
 		public SharpTreeNode OldNode { get; }
 		public SharpTreeNode NewNode { get; }
 		public ObjectChangedEventArgs(SharpTreeNode oldNode, SharpTreeNode newNode) {
